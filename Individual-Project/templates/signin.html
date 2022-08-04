@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Signin</title>
+    <link href="static/css/style.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link href="//db.onlinewebfonts.com/c/31ed0189fe1ff1e740a652e0f75b77dc?family=Snell+Roundhand" rel="stylesheet" type="text/css"/>
+</head>
+
+<body style="background-color:#fcf3ef;">
+    <nav> 
+      <a href="/" class="logo"> Aromatic </a>
+      <a href="/"><img src="static/pics/logoo.png" allign="top" height="85" width="85" id="lol"></a>
+      <ul>
+        <!-- <li><a tclass="acive" href="index.html">Home</a></li> -->
+        <li><a href="/about">About</a></li>
+        <li><a href="/men">Men's</a></li>
+        <li><a href="/women">Women's</a></li>
+        <li><a href="/cart">Cart</a></li>
+
+        <li><a href="#">Account
+            <ul>
+                <li><a href="/signin">Log In</a></li>
+                <li><a href="/signup">Sign Up</a></li>
+            </ul>
+        </a></li>          
+    </nav>
+    <form method="POST" action="/signin">
+        <!-- Heading -->
+        <h4 style="font-family:garamond;">
+        Log in to your account
+        </h4>
+
+        <!-- Subheading -->
+        <p style="font-family:garamond">
+        Please fill up your information below to sign in.
+        </p>
+
+        <!-- Email -->
+        <div>
+            <label style="font-family:garamond">Email address*</label>
+            <div>
+                <input type="email"  name="email" id="emailStr" required>
+            </div>
+        </div>
+
+        <!-- Password -->
+        <div>
+            <label style="font-family:garamond">Password*</label>
+            <div class="input-group">
+                <input type="password"  name="password" minlength="6" required>
+            </div>
+        </div>
+        
+        <!-- Button -->
+        <div>
+            <input type="submit"/>
+        </div>
+    </form>
+    {{error}}
+    <br>
+    <a href="/signup">Sign up</a>
+</body>
+</html>

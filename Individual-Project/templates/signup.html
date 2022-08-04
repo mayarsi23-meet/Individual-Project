@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Signup</title>
+    <link href="static/css/style.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link href="//db.onlinewebfonts.com/c/31ed0189fe1ff1e740a652e0f75b77dc?family=Snell+Roundhand" rel="stylesheet" type="text/css"/>
+</head>
+
+<body style="background-color:#fcf3ef;">
+    <nav> 
+      <a href="/" class="logo"> Aromatic </a>
+      <a href="/"><img src="static/pics/logoo.png" allign="top" height="85" width="85" id="lol"></a>
+      <ul>
+        <!-- <li><a tclass="acive" href="index.html">Home</a></li> -->
+        <li><a href="/about">About</a></li>
+        <li><a href="/men">Men's</a></li>
+        <li><a href="/women">Women's</a></li>
+        <li><a href="/cart">Cart</a></li>
+
+        <li><a href="#">Account
+            <ul>
+                <li><a href="/signin">Log In</a></li>
+                <li><a href="/signup">Sign Up</a></li>
+            </ul>
+        </a></li>
+          
+
+    </nav>
+    <form method="POST" action="/signup">
+        <!-- Heading -->
+        <h4 style="font-family:garamond">
+            Create an account
+        </h4>
+
+        <!-- Subheading -->
+        <p  style="font-family:garamond">
+            Please fill up your information below to sign up
+        </p>
+        <br>
+        <div>
+            <label align="center" style="font-family:garamond"> First Name* </label>
+            <div>
+                <input type="first_name" name="first_name" id="firstname" align="center" required>
+            </div>
+        </div></br>
+
+        <br>
+        <div>
+            <label align="center" style="font-family:garamond"> Last Name* </label>
+            <div>
+                <input type="last_name" name="last_name" id="lastname" align="center" required>
+            </div>
+        </div></br>
+
+        <br><div>
+            <label align="center" style="font-family:garamond"> Birthdate* </label>
+            <div>
+                <input type="date"  name="birthdate" id ="birthdate" align="center" required>
+            </div>
+        </div></br>
+
+        <br>
+        <div>
+            <label align="center" style="font-family:garamond">Email address*</label>
+            <div>
+                <input type="email"  name="email" id="emailStr" align="center" required>
+            </div>
+        </div></br>
+
+        <div>
+            <label align="center" style="font-family:garamond">Password*</label>
+            <div class="input-group">
+                <input type="password"  name="password" minlength="6" align="center" required>
+            </div>
+        </div>
+
+        <br>
+        <div>
+            <label align="center" style="font-family:garamond"> Username* </label>
+            <div>
+                <input type="username"  name="username" id ="username" align="center" required>
+            </div>
+        </div></br>
+
+
+        <!-- Button -->
+        <div>
+            <input type="submit" align="center"/>
+        </div>
+    </form>
+    <br>
+    <a href="/signin">Already have an account? Log in</a>
+
+</body>
+</html>
